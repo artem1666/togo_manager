@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Task Manager: Класс TaskManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Task Manager
+   </div>
+   <div id="projectbrief">Консольный менеджер задач на C++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_task_manager.html','','class_task_manager-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс TaskManager</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для управления списком задач.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="task__manager_8h_source.html">task_manager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aff6eb2eb82ad8396ad50dcd0ad6fb08f" id="r_aff6eb2eb82ad8396ad50dcd0ad6fb08f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff6eb2eb82ad8396ad50dcd0ad6fb08f">addTask</a> (const string &amp;title, const string &amp;date, int priority)</td></tr>
+<tr class="memdesc:aff6eb2eb82ad8396ad50dcd0ad6fb08f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет новую задачу.  <br /></td></tr>
+<tr class="memitem:a4caa3c1ff5e96efd5e06bf7bb2f9b545" id="r_a4caa3c1ff5e96efd5e06bf7bb2f9b545"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4caa3c1ff5e96efd5e06bf7bb2f9b545">showTasks</a> () const</td></tr>
+<tr class="memdesc:a4caa3c1ff5e96efd5e06bf7bb2f9b545"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит список всех задач в консоль.  <br /></td></tr>
+<tr class="memitem:a72a1545661cfafda61d1c980ae1e7cc7" id="r_a72a1545661cfafda61d1c980ae1e7cc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72a1545661cfafda61d1c980ae1e7cc7">markCompleted</a> (<a class="el" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">size_t</a> index)</td></tr>
+<tr class="memdesc:a72a1545661cfafda61d1c980ae1e7cc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отмечает задачу как выполненную.  <br /></td></tr>
+<tr class="memitem:abcb45586d74e40dfa10b7708c1bb0326" id="r_abcb45586d74e40dfa10b7708c1bb0326"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcb45586d74e40dfa10b7708c1bb0326">saveToFile</a> (const string &amp;filename) const</td></tr>
+<tr class="memdesc:abcb45586d74e40dfa10b7708c1bb0326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохраняет задачи в файл.  <br /></td></tr>
+<tr class="memitem:aeafe8881b734abdb8bf84e41274415ca" id="r_aeafe8881b734abdb8bf84e41274415ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeafe8881b734abdb8bf84e41274415ca">loadFromFile</a> (const string &amp;filename)</td></tr>
+<tr class="memdesc:aeafe8881b734abdb8bf84e41274415ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загружает задачи из файла.  <br /></td></tr>
+<tr class="memitem:ae3b9ce79d13d386179ca5631573c050e" id="r_ae3b9ce79d13d386179ca5631573c050e"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">size_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3b9ce79d13d386179ca5631573c050e">findTaskIndices</a> (const string &amp;keyword) const</td></tr>
+<tr class="memdesc:ae3b9ce79d13d386179ca5631573c050e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ищет задачи по ключевому слову.  <br /></td></tr>
+<tr class="memitem:aea275acae7834f9ffe17596e48456e9a" id="r_aea275acae7834f9ffe17596e48456e9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea275acae7834f9ffe17596e48456e9a">sortTasks</a> (function&lt; bool(const <a class="el" href="struct_task.html">Task</a> &amp;, const <a class="el" href="struct_task.html">Task</a> &amp;)&gt; comparator)</td></tr>
+<tr class="memdesc:aea275acae7834f9ffe17596e48456e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сортирует задачи по заданному критерию.  <br /></td></tr>
+<tr class="memitem:a68f4e3456f07cc2fd43aa3533f053f70" id="r_a68f4e3456f07cc2fd43aa3533f053f70"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68f4e3456f07cc2fd43aa3533f053f70">editTask</a> (<a class="el" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">size_t</a> index, const string &amp;newTitle=&quot;&quot;, const string &amp;newDate=&quot;&quot;, int newPriority=-1)</td></tr>
+<tr class="memdesc:a68f4e3456f07cc2fd43aa3533f053f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Редактирует задачу.  <br /></td></tr>
+<tr class="memitem:a5b7add6fbd1a2915c4b57af866ff5573" id="r_a5b7add6fbd1a2915c4b57af866ff5573"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b7add6fbd1a2915c4b57af866ff5573">deleteTask</a> (<a class="el" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">size_t</a> index)</td></tr>
+<tr class="memdesc:a5b7add6fbd1a2915c4b57af866ff5573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет задачу.  <br /></td></tr>
+<tr class="memitem:af286fb9a77133d87bd5ba7b4c5a5d3b1" id="r_af286fb9a77133d87bd5ba7b4c5a5d3b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af286fb9a77133d87bd5ba7b4c5a5d3b1">getTaskCount</a> () const</td></tr>
+<tr class="memdesc:af286fb9a77133d87bd5ba7b4c5a5d3b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает количество задач.  <br /></td></tr>
+<tr class="memitem:ac441f534bc1363dc59d7e3dcc7e78e9a" id="r_ac441f534bc1363dc59d7e3dcc7e78e9a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_task.html">Task</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac441f534bc1363dc59d7e3dcc7e78e9a">getTask</a> (<a class="el" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">size_t</a> index) const</td></tr>
+<tr class="memdesc:ac441f534bc1363dc59d7e3dcc7e78e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает задачу по индексу.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a976ecbe57d3a69379e39ff17d3523a6c" id="r_a976ecbe57d3a69379e39ff17d3523a6c"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="struct_task.html">Task</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a976ecbe57d3a69379e39ff17d3523a6c">tasks</a></td></tr>
+<tr class="memdesc:a976ecbe57d3a69379e39ff17d3523a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор для хранения задач.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для управления списком задач. </p>
+<p>Позволяет добавлять, удалять, редактировать, искать и сортировать задачи. Данные сохраняются в файл и загружаются из него. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="aff6eb2eb82ad8396ad50dcd0ad6fb08f" name="aff6eb2eb82ad8396ad50dcd0ad6fb08f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff6eb2eb82ad8396ad50dcd0ad6fb08f">&#9670;&#160;</a></span>addTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TaskManager::addTask </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>title</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>date</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>priority</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавляет новую задачу. </p>
+<p>Добавляет задачу в список.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>Название задачи. </td></tr>
+    <tr><td class="paramname">date</td><td>Дата в формате DD.MM.YYYY. </td></tr>
+    <tr><td class="paramname">priority</td><td>Приоритет (1-3). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5b7add6fbd1a2915c4b57af866ff5573" name="a5b7add6fbd1a2915c4b57af866ff5573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b7add6fbd1a2915c4b57af866ff5573">&#9670;&#160;</a></span>deleteTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TaskManager::deleteTask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">size_t</a></td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаляет задачу. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Индекс задачи. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если операция успешна, false при неверном индексе.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Индекс задачи. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - успех, false - неверный индекс. </dd></dl>
+
+</div>
+</div>
+<a id="a68f4e3456f07cc2fd43aa3533f053f70" name="a68f4e3456f07cc2fd43aa3533f053f70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68f4e3456f07cc2fd43aa3533f053f70">&#9670;&#160;</a></span>editTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TaskManager::editTask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">size_t</a></td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>newTitle</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>newDate</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>newPriority</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Редактирует задачу. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Индекс задачи. </td></tr>
+    <tr><td class="paramname">newTitle</td><td>Новое название (пустая строка — оставить без изменений). </td></tr>
+    <tr><td class="paramname">newDate</td><td>Новая дата (пустая строка — оставить без изменений). </td></tr>
+    <tr><td class="paramname">newPriority</td><td>Новый приоритет (-1 — оставить без изменений). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если операция успешна, false при неверном индексе.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Индекс задачи. </td></tr>
+    <tr><td class="paramname">newTitle</td><td>Новое название (пусто = не изменять). </td></tr>
+    <tr><td class="paramname">newDate</td><td>Новая дата (пусто = не изменять). </td></tr>
+    <tr><td class="paramname">newPriority</td><td>Новый приоритет (-1 = не изменять). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - успех, false - неверный индекс. </dd></dl>
+
+</div>
+</div>
+<a id="ae3b9ce79d13d386179ca5631573c050e" name="ae3b9ce79d13d386179ca5631573c050e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3b9ce79d13d386179ca5631573c050e">&#9670;&#160;</a></span>findTaskIndices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; <a class="el" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">size_t</a> &gt; TaskManager::findTaskIndices </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>keyword</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ищет задачи по ключевому слову. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyword</td><td>Строка для поиска (в названии или дате). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор индексов подходящих задач.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyword</td><td>Слово для поиска (в названии или дате). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор индексов найденных задач. </dd></dl>
+
+</div>
+</div>
+<a id="ac441f534bc1363dc59d7e3dcc7e78e9a" name="ac441f534bc1363dc59d7e3dcc7e78e9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac441f534bc1363dc59d7e3dcc7e78e9a">&#9670;&#160;</a></span>getTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_task.html">Task</a> &amp; TaskManager::getTask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">size_t</a></td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает задачу по индексу. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Индекс задачи. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Константная ссылка на задачу. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::out_of_range</td><td>Если индекс некорректен. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af286fb9a77133d87bd5ba7b4c5a5d3b1" name="af286fb9a77133d87bd5ba7b4c5a5d3b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af286fb9a77133d87bd5ba7b4c5a5d3b1">&#9670;&#160;</a></span>getTaskCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">size_t</a> TaskManager::getTaskCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает количество задач. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Число задач в списке. </dd></dl>
+
+</div>
+</div>
+<a id="aeafe8881b734abdb8bf84e41274415ca" name="aeafe8881b734abdb8bf84e41274415ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeafe8881b734abdb8bf84e41274415ca">&#9670;&#160;</a></span>loadFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TaskManager::loadFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Загружает задачи из файла. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Имя файла (например, "tasks.txt").</td></tr>
+    <tr><td class="paramname">filename</td><td>Имя файла для загрузки. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a72a1545661cfafda61d1c980ae1e7cc7" name="a72a1545661cfafda61d1c980ae1e7cc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72a1545661cfafda61d1c980ae1e7cc7">&#9670;&#160;</a></span>markCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TaskManager::markCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">size_t</a></td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отмечает задачу как выполненную. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Индекс задачи в списке. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если операция успешна, false при неверном индексе.</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Индекс задачи (начиная с 0). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - успех, false - неверный индекс. </dd></dl>
+
+</div>
+</div>
+<a id="abcb45586d74e40dfa10b7708c1bb0326" name="abcb45586d74e40dfa10b7708c1bb0326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcb45586d74e40dfa10b7708c1bb0326">&#9670;&#160;</a></span>saveToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TaskManager::saveToFile </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сохраняет задачи в файл. </p>
+<p>Сохраняет задачи в файл CSV-формата. Формат строки: название,дата,приоритет,выполнено(0/1)</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Имя файла (например, "tasks.txt").</td></tr>
+    <tr><td class="paramname">filename</td><td>Имя файла для сохранения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4caa3c1ff5e96efd5e06bf7bb2f9b545" name="a4caa3c1ff5e96efd5e06bf7bb2f9b545"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4caa3c1ff5e96efd5e06bf7bb2f9b545">&#9670;&#160;</a></span>showTasks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TaskManager::showTasks </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выводит список всех задач в консоль. </p>
+<p>Выводит все задачи в консоль. Формат: [индекс]. [x] Название (дата, приоритет: N) </p>
+
+</div>
+</div>
+<a id="aea275acae7834f9ffe17596e48456e9a" name="aea275acae7834f9ffe17596e48456e9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea275acae7834f9ffe17596e48456e9a">&#9670;&#160;</a></span>sortTasks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TaskManager::sortTasks </td>
+          <td>(</td>
+          <td class="paramtype">function&lt; bool(const <a class="el" href="struct_task.html">Task</a> &amp;, const <a class="el" href="struct_task.html">Task</a> &amp;)&gt;</td>          <td class="paramname"><span class="paramname"><em>comparator</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сортирует задачи по заданному критерию. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">comparator</td><td>Функция сравнения двух задач.</td></tr>
+    <tr><td class="paramname">comparator</td><td>Функция сравнения (лямбда или std::function). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a976ecbe57d3a69379e39ff17d3523a6c" name="a976ecbe57d3a69379e39ff17d3523a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a976ecbe57d3a69379e39ff17d3523a6c">&#9670;&#160;</a></span>tasks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="struct_task.html">Task</a>&gt; TaskManager::tasks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вектор для хранения задач. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/<a class="el" href="task__manager_8h_source.html">task_manager.h</a></li>
+<li>src/<a class="el" href="task__manager_8cpp.html">task_manager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_task_manager.html">TaskManager</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>
