@@ -1,17 +1,9 @@
-﻿/**
- * @file main.cpp
- * @brief Консольный интерфейс для менеджера задач.
- */
-
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 #include "task_manager.h"
 
 using namespace std;
 
-/**
- * @brief Выводит главное меню в консоль.
- */
 void showMenu() {
     cout << "\n=============================";
     cout << "\n|        Task Manager       |";
@@ -28,10 +20,6 @@ void showMenu() {
     cout << " > ";
 }
 
-/**
- * @brief Добавляет задачу через пользовательский ввод.
- * @param manager Ссылка на объект TaskManager.
- */
 void addTask(TaskManager& manager) {
     string title, date;
     int priority;
@@ -49,11 +37,6 @@ void addTask(TaskManager& manager) {
     manager.addTask(title, date, priority);
     cout << "Task added!\n";
 }
-
-/**
- * @brief Сортирует задачи по выбранному критерию.
- * @param manager Ссылка на объект TaskManager.
- */
 
 void showSortedTasks(TaskManager& manager) {
     cout << "\nSort tasks\n";
@@ -79,10 +62,6 @@ void showSortedTasks(TaskManager& manager) {
     manager.showTasks();
 }
 
-/**
- * @brief Редактирует задачу по индексу.
- * @param manager Ссылка на объект TaskManager.
- */
 void editTask(TaskManager& manager) {
     manager.showTasks();
     cout << "Enter task number: ";

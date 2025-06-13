@@ -1,0 +1,5 @@
+C:/Users/User/Desktop/project/build/CMakeFiles/todo_manager.dir
+C:/Users/User/Desktop/project/build/CMakeFiles/tests.dir
+C:/Users/User/Desktop/project/build/CMakeFiles/test.dir
+C:/Users/User/Desktop/project/build/CMakeFiles/edit_cache.dir
+C:/Users/User/Desktop/project/build/CMakeFiles/rebuild_cache.dir
