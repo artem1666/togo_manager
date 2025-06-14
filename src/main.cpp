@@ -40,8 +40,8 @@ void addTask(TaskManager& manager) {
 
 void showSortedTasks(TaskManager& manager) {
     cout << "\nSort tasks\n";
-    cout << "1. By priority (v)\n";
-    cout << "2. By priority (^)\n";
+    cout << "1. By priority (^)\n";
+    cout << "2. By priority (v)\n";
     cout << "3. By date (^)\n";
     cout << "4. By date (v)\n";
     cout << "> ";
